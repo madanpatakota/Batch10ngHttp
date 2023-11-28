@@ -1,0 +1,81 @@
+<!-- jsonPlaceHolderkAPIData -->
+<!-- [] -->
+<!-- <div class="container m-3">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Body</th>
+        <th>Title</th>
+        <th>UserID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of jsonPlaceHolderkAPIData">
+        <td>{{ item.id }}</td>
+        <td>{{ item.body }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.userId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="container">
+  <div class="m-4 p-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Job</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of customersAPIData">
+          <td>{{ item.id }}</td>
+          <td>{{ item.Name }}</td>
+          <td>{{ item.Job }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row m-3">
+    <div class="col-3">
+      <input type="text" class="form-control" [(ngModel)]="customerID" />
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary" (click)="evtGetCustomerBYID()">
+        Get by id
+      </button>
+    </div>
+  </div>
+  <hr>
+  <div class="row m-3">
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Enter your name" [(ngModel)] = "CusName" />
+    </div>
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Enter your Job" [(ngModel)] = "CusJob" />
+    </div>
+    <div class="col-1"></div>
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="evtPost()">Post</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row m-3">
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Enter the ID" [(ngModel)] = "patchCutomerID" />
+    </div>
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Enter update your name" [(ngModel)] = "patchCusName" />
+    </div>
+    <!-- <div class="col-3">
+      <input type="text" class="form-control" placeholder="Enter update your Job" [(ngModel)] = "patchCusJob" />
+    </div> -->
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="evtPatch()">Patch</button>
+    </div>
+  </div>
+</div>

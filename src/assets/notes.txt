@@ -1,0 +1,68 @@
+
+
+1. i am goint to take the one fake api (Test api) from internet...
+
+2. Just i am going to subscribe that api for the data..
+
+3. then i will bind the data..
+
+
+
+
+
+
+My Observations :
+
+0. we are working for information(json place holder any)
+
+1. Jsonplacehoder is maintains the api
+
+2. He maintains the server    ( server down and server up)
+
+3. Here incase if server is down i will be impace(subscription)
+
+
+My Plan :
+
+0. we are working for information(my own data)
+
+1. i am going to prepare my own server.
+
+2. i am going to subscribe the my own api
+
+
+
+
+i am  preparing the db    ( for data)
+i am  preparing the apis   
+i am  preparing the server (json)
+i am  preparing the table for show the data(angular)
+
+
+
+
+i will prepare the api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

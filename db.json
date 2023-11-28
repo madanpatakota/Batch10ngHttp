@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test Angular data",
+      "author": "Madan"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customers": [
+    {
+      "id": 1,
+      "Name": "John",
+      "Job": "Sales Rep"
+    },
+    {
+      "id": 2,
+      "Name": "Mary",
+      "Job": "Cashier"
+    },
+    {
+      "id": 3,
+      "Name": "Smith",
+      "Job": "HR"
+    },
+    {
+      "Name": "Robert",
+      "Job": "SE",
+      "id": 4
+    },
+    {
+      "Name": "Lisa",
+      "Job": "SSE",
+      "id": 5
+    },
+    {
+      "Name": "lkjdbjashdfasdfas",
+      "Job": "ssss",
+      "id": 6
+    }
+  ]
+}
