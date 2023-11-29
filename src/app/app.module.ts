@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule , HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProjectAPIInterceptor } from './project-api.interceptor';
  
 
 @NgModule({
@@ -15,7 +16,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide : HTTP_INTERCEPTORS , useClass : ProjectAPIInterceptor , multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,9 +18,9 @@
   },
   "customers": [
     {
-      "id": 1,
-      "Name": "John",
-      "Job": "Sales Rep"
+      "Name": "Madan M",
+      "Job": "fresher",
+      "id": 1
     },
     {
       "id": 2,
@@ -28,24 +28,14 @@
       "Job": "Cashier"
     },
     {
-      "id": 3,
-      "Name": "Smith",
-      "Job": "HR"
+      "Name": "John Jr",
+      "Job": "Se",
+      "id": 3
     },
     {
-      "Name": "Robert",
-      "Job": "SE",
+      "Name": "John aadasff",
+      "Job": "jjjj",
       "id": 4
-    },
-    {
-      "Name": "Lisa",
-      "Job": "SSE",
-      "id": 5
-    },
-    {
-      "Name": "lkjdbjashdfasdfas",
-      "Job": "ssss",
-      "id": 6
     }
   ]
 }

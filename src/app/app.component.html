@@ -50,32 +50,103 @@
       </button>
     </div>
   </div>
-  <hr>
+  <hr />
   <div class="row m-3">
     <div class="col-3">
-      <input type="text" class="form-control" placeholder="Enter your name" [(ngModel)] = "CusName" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter your name"
+        [(ngModel)]="CusName"
+      />
     </div>
     <div class="col-3">
-      <input type="text" class="form-control" placeholder="Enter your Job" [(ngModel)] = "CusJob" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter your Job"
+        [(ngModel)]="CusJob"
+      />
     </div>
     <div class="col-1"></div>
     <div class="col-3">
       <button class="btn btn-primary" (click)="evtPost()">Post</button>
     </div>
   </div>
-  <hr>
+  <hr />
+
+  <!-- Patch : if you want to update the few records based on the parameter(ID) -->
   <div class="row m-3">
     <div class="col-3">
-      <input type="text" class="form-control" placeholder="Enter the ID" [(ngModel)] = "patchCutomerID" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter the ID"
+        [(ngModel)]="patchCutomerID"
+      />
     </div>
     <div class="col-3">
-      <input type="text" class="form-control" placeholder="Enter update your name" [(ngModel)] = "patchCusName" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter update your name"
+        [(ngModel)]="patchCusName"
+      />
     </div>
     <!-- <div class="col-3">
       <input type="text" class="form-control" placeholder="Enter update your Job" [(ngModel)] = "patchCusJob" />
     </div> -->
     <div class="col-3">
       <button class="btn btn-primary" (click)="evtPatch()">Patch</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- put : if you want to update the All records based on the parameter(ID) -->
+  <div class="row m-3">
+    <div class="col-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter the ID"
+        [(ngModel)]="putCutomerID"
+      />
+    </div>
+    <div class="col-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter update your name"
+        [(ngModel)]="putCusName"
+      />
+    </div>
+    <div class="col-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter update your Job"
+        [(ngModel)]="putCusJob"
+      />
+    </div>
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="evtPut()">Put</button>
+    </div>
+  </div>
+
+  <!-- Delte : if you want to Delete the record based on the parameter(ID) -->
+  <hr>
+  <div class="row m-3">
+    <div class="col-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter the ID"
+        [(ngModel)]="deleteCutomerID"
+      />
+    </div>
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="evtDelete()">Delete</button>
     </div>
   </div>
 </div>
