@@ -61,14 +61,14 @@ export class AppComponent implements OnInit {
     this.httpClient
       .get('http://localhost:3000/customers', 
       {
-        headers: {
-            CompanyName : "Misard.com",
-            Role        : "Admin",
-            Project     : "Angular Project"
-        },
-        params : {
-            Location : "Bangolore"
-        }
+        // headers: {
+        //     CompanyName : "Misard.com",
+        //     Role        : "Admin",
+        //     Project     : "Angular Project"
+        // },
+        // params : {
+        //     Location : "Bangolore"
+        // }
       },
       
       

@@ -30,12 +30,13 @@ export class ProjectAPIInterceptor implements HttpInterceptor {
       MailID      : "madan.patakota@gmail.com"
     });
 
+    return next.handle(request)
 
-    var updatedparams = new HttpParams().set("Logo", "M6");
+  //   var updatedparams = new HttpParams().set("Logo", "M6");
 
 
-   var cloneRequest =  request.clone( { headers : updatedheaders , params : updatedparams  })
-    return next.handle(cloneRequest);
+  //  var cloneRequest =  request.clone( { headers : updatedheaders , params : updatedparams  })
+  //   return next.handle(cloneRequest);
     
   }
 }
